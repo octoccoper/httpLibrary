@@ -17,7 +17,16 @@ const data = {
 }
 
 // Create post
-http.post("https://jsonplaceholder.typicode.com/posts", data, function(error, response) {
+// http.post("https://jsonplaceholder.typicode.com/posts", data, function(error, response) {
+//   if(error) {
+//     console.log(error);
+//   } else {
+//     console.log(response);
+//   }
+// });
+
+// Update post
+http.put("https://jsonplaceholder.typicode.com/posts/1", data, function(error, response) {
   if(error) {
     console.log(error);
   } else {
